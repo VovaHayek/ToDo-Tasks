@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3cdc75e21f.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-text">
+            <h1 class="website-name">WORK TO-DOS</h1>
+            <h2 class="instruction1">Enter text into the input field to add items to your list</h2>
+            <h2 class="instruction2">LEFT container is active tasks, and RIGHT container is completed tasks</h2>
+        </div>
+
+        <div class="create-task">
+            <input type="text" class="task-info" id="task-input">
+            <button class="create-task-button" onclick="createTask(document.getElementById('task-input').value)">&#9998;</button>
+        </div>
+
+        <div class="united-task-divs">
+            <div class="tasks-storage" id="allTasks"></div>
+            <div class="completed-tasks" id="completedTasks"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
